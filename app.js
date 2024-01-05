@@ -35,7 +35,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/sendmail", function (req, res) {
-  console.log(req.body);
+  //   console.log(req.body);
   let subject = req.body.subject;
   let to = req.body.to;
   let text = req.body.text;
@@ -46,7 +46,6 @@ app.post("/sendmail", function (req, res) {
     service: "gmail",
     auth: {
       user: from,
-      //   pass: "djvl cnkd kcyu cmqh",
       pass: gpass,
     },
   });
@@ -91,7 +90,6 @@ app.post("/sendmail/random_number/:codeLength", function (req, res) {
     service: "gmail",
     auth: {
       user: from,
-      //   pass: "djvl cnkd kcyu cmqh",
       pass: gpass,
     },
   });
