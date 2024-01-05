@@ -46,7 +46,6 @@ app.post("/sendmail", function (req, res) {
     service: "gmail",
     auth: {
       user: from,
-      //   pass: "djvl cnkd kcyu cmqh",
       pass: gpass,
     },
   });
